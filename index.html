@@ -21,34 +21,32 @@ font-family: Arial, sans-serif;
     font-weight: bold;
 }
 
-/* Welcome Animation */
+/* Welcome Animation */ (No blink) */
 .welcome {
     font-size: 24px;
     font-weight: bold;
     margin-top: 20px;
     animation: colorChange 2s infinite;
 }
-
-.stars {
-    font-size: 22px;
+/* Stars blinking with different colors */
+.star1 {
     animation: blink 1s infinite alternate;
 }
-
-/* Color changing */
-@keyframes colorChange {
-    0% { color: #ff4d6d; }
-    25% { color: #ff9800; }
-    50% { color: #4caf50; }
-    75% { color: #2196f3; }
-    100% { color: #9c27b0; }
+ .star 2 {
+   animation: blink2 1s infinitealternate;
+ }
+@keyframes blink1 {
+  0% { opacity: 1;
+      color:gold;}
+color: orange; }
+    100% { opacity: 1; color: red; }
 }
 
-/* Blinking effect */
-@keyframes blink {
-    from { opacity: 1; }
-    to { opacity: 0.2; }
-}
-
+@keyframes blink2 {
+    0% { opacity: 1; color: #4caf50; }
+    50% { opacity: 0.3; color: #2196f3; }
+    100% { opacity: 1; color: #9c27b0; }
+}     
 .container {
     padding: 20px;
 }
@@ -56,6 +54,15 @@ font-family: Arial, sans-serif;
 h1 {
     margin-top: 10px;
 }
+/* Nail Quote */
+.quote {
+    color: #ff4d6d;
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+
 
 .tagline {
     color: gray;
@@ -257,13 +264,19 @@ footer {
 
     <!-- Welcome Text -->
     <div class="welcome">
-        <span class="stars">⭐️</span>
+        <span class="star1">⭐️</span>
         Welcome to
-        <span class="stars">⭐️</span>
+        <span class="star2">⭐️</span>
     </div>
   
   
     <h1>Dolly’s Nail Lounge🌺</h1>
+    
+<!-- Nail Quote -->
+    <div class="quote">
+        "yours nails are a way to speak your style without saying a word✨"
+    </div>
+    
     <div class="tagline">
     Beautiful Nails, Beautiful You ✨ </div>
   <a href="tel:9137394563" class="btn call">📞 Call Now</a>
