@@ -98,19 +98,20 @@
   font-size: 18px;      /* size chota */
   font-weight: 600;     /* clean look */
   margin-bottom: 10px;
-}
-.work-gallery {
+}  
+
+  .work-gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 images ek row me */
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
 
 .work-gallery img {
-  transition:0.3s;
+  width: 100%;        /* 🔥 yaha width aa gaya */
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
 }
-  .work-gallery img:hover {
-  transform:scale(1.05);
-  }
 
 /* Videos (Eyebrows & Lips) */
 .work-gallery video {
@@ -407,15 +408,14 @@ footer {
 
   </div>
 </div>
-<h2 class="work-gallery">Our Nail Work🌼</h2>
-  <div style="display:flex; gap:10px; flex-wrap:wrap;">
-  <img src="IMG-20260501-WA0009.jpg" style="width:150px; height:150px; border-radius:10px;"object-fit:cover;">
-  <img src="IMG-20260501-WA0016.jpg" style="width:150px; height:150px; border-radius:10px;"object-fit:cover;">
-  <img src="IMG-20260501-WA0022.jpg" style="width:150px; height:150px; border-radius:10px;" object-fit:cover;">
-  <img src="IMG-20260501-WA0029.jpg" style="width:150px; height:150px; border-radius:10px;" object-fit:cover;">
-  <img src="IMG-20260501-WA0039.jpg" style="width:150px; height:150px; border-radius:10px;"object-fit:cover;">
-  <img src="motion_photo_1224323099428086650.jpg" style="width:150px; border-radius:10px;"height:150px; object-fit:cover;">
-  </div>
+<div class="work-gallery">
+  <img src="IMG-20260501-WA0009.jpg">
+  <img src="IMG-20260501-WA0016.jpg">
+  <img src="IMG-20260501-WA0022.jpg">
+  <img src="IMG-20260501-WA0029.jpg">
+  <img src="IMG-20260501-WA0039.jpg">
+  <img src="motion_photo_1224323099428086650.jpg">
+</div>
 <h2 class="work-heading">Our Eyebrows & Lips Work✨</h2>
 
 <div class="work-gallery">
