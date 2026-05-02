@@ -9,6 +9,17 @@
   .hero {
   height: 80vh;
   background: url("https://i.pinimg.com/736x/37/17/a0/3717a0baa452b23477e0dfcd537df80e.jpg") center/cover no-repeat;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden; /* 🔥 important */
+  }
+  .hero {
+  height: 80vh;
+  background: url("https://i.pinimg.com/736x/37/17/a0/3717a0baa452b23477e0dfcd537df80e.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +28,6 @@
   position: relative;
 }
 
-/* dark overlay for better text visibility */
 .hero::before {
   content: "";
   position: absolute;
@@ -26,11 +36,20 @@
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.5);
+  z-index: 0;
 }
-
 .hero-content {
   position: relative;
   z-index: 1;
+  color: white;
+}
+
+  .service-box,
+.work-gallery,
+section {
+  background: white;
+  position: relative;
+  z-index: 2;
 }
 
 .hero h1 {
