@@ -6,6 +6,47 @@
 <title>Dolly’s Nail Lounge</title>
 
 <style>
+  .hero {
+  height: 80vh;
+  background: url("https://i.pinimg.com/736x/37/17/a0/3717a0baa452b23477e0dfcd537df80e.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* dark overlay for better text visibility */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  margin: 5px;
+  display: inline-block;
+}
 .welcome-text {
   text-align: center;
   font-size: 28px;
@@ -238,14 +279,12 @@ footer {
 <header>
  Dolly’s Nail Lounge 
 </header>
+  
 
-<div class="hero">
-  <h1 class="welcome-text">Welcome to Dolly’s Nail Lounge️🪄</h1>
-  <p class="tagline">
-  Beautiful nails don’t happen by chance, they happen by appointment
-</p>
-  <p><b><i>Professional Nail & Beauty Services in Navi Mumbai💌</p></b></i>
-
+<section class="hero">
+  <div class="hero-content">
+    <h1>Dolly’s Nail Lounge🌺</h1>
+    <p>Beautiful Nails, Beautiful You ✨</p>
   <a href="tel:9137394563" class="btn call">📞 Call Now</a>
   <a href="https://wa.me/919137394563" class="btn whatsapp">💬 WhatsApp</a>
   <a href="https://wa.me/919137394563?text=I want to book appointment" class="btn book">📅 Book Now</a>
