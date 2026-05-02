@@ -6,60 +6,79 @@
 <title>Dolly’s Nail Lounge </title>
   <style>
     body {
-  background: #f9f9f9; /* ya white */
-    }
-
-.hero h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
+  
+font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+    text-align: center;
 }
 
-.hero p {
-  font-size: 16px;
-  margin-bottom: 15px;
+.header {
+    background: #ff4d6d;
+    color: white;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Welcome Animation */
+.welcome {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: colorChange 2s infinite;
+}
+
+.stars {
+    font-size: 22px;
+    animation: blink 1s infinite alternate;
+}
+
+/* Color changing */
+@keyframes colorChange {
+    0% { color: #ff4d6d; }
+    25% { color: #ff9800; }
+    50% { color: #4caf50; }
+    75% { color: #2196f3; }
+    100% { color: #9c27b0; }
+}
+
+/* Blinking effect */
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0.2; }
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+.tagline {
+    color: gray;
+    margin-bottom: 20px;
 }
 
 .btn {
-  margin: 5px;
-  display: inline-block;
-}
-.welcome-text {
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  color: #6a1b9a;
-}
-
-.welcome-text::before,
-.welcome-text::after {
-  content: "★";
-  margin: 0 8px;
-  animation: blinkStar 1s infinite alternate!
-  important;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-@keyframes blinkStar {
-  0% {
-    opacity: 1;
-    color: #1976d2;
-  }
-  50% {
-    opacity: 0.3;
-    color: #ffd700;
-  }
-  100% {
-    opacity: 1;
-    color: #003366;
-  }
-}
-.tagline {
-  text-align: center;
-  font-size: 14px;
-  color: #c2185b;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-style: italic;
-}
+.call { background: #2196f3; }
+.whatsapp { background: #25d366; }
+.book { background: #ff4d6d; }
+
+
+
+    
 .review-box {
   background: #ffe4ec;
   padding: 15px;
@@ -190,28 +209,8 @@ header {
   font-weight:bold;
 }
 
-.hero {
-  text-align:center;
-  padding:40px 20px;
-}
 
-.hero h1 {
-  color:#c2185b;
-  margin-bottom:10px;
-}
 
-.btn {
-  display:inline-block;
-  margin:10px;
-  padding:12px 22px;
-  border-radius:30px;
-  color:#fff;
-  text-decoration:none;
-}
-
-.call { background:#007bff; }
-.whatsapp { background:#25D366; }
-.book { background:#c2185b; }
 
 .section {
   padding:30px;
@@ -251,13 +250,22 @@ footer {
 
 <body>
   
-
-<header>
+<div class="header">
  Dolly’s Nail Lounge 
-</header>
+</div>
+  <div class="container">
+
+    <!-- Welcome Text -->
+    <div class="welcome">
+        <span class="stars">⭐️</span>
+        Welcome to
+        <span class="stars">⭐️</span>
+    </div>
+  
   
     <h1>Dolly’s Nail Lounge🌺</h1>
-    <p>Beautiful Nails, Beautiful You ✨</p>
+    <div class="tagline">
+    Beautiful Nails, Beautiful You ✨ </div>
   <a href="tel:9137394563" class="btn call">📞 Call Now</a>
   <a href="https://wa.me/919137394563" class="btn whatsapp">💬 WhatsApp</a>
   <a href="https://wa.me/919137394563?text=I want to book appointment" class="btn book">📅 Book Now</a>
