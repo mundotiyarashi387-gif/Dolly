@@ -102,16 +102,19 @@
 .work-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 images ek row me */
-  gap: 10px;
-  padding: 10px;
+  gap: 15px;
 }
 
 .work-gallery img {
+  transition: 0.3s;
   width: 100%;
-  height: 150px;   /* same height sabki */
+  height: 180px;   /* same height sabki */
   object-fit: cover; /* crop karega, stretch nahi */
-  border-radius: 10px;
+  border-radius: 12px;
 }
+  .work-gallery img:hover {
+  transform: scale(1.05);
+  }
 
 /* Videos (Eyebrows & Lips) */
 .work-gallery video {
@@ -408,7 +411,7 @@ footer {
 
   </div>
 </div>
-<h2 class="work-heading">Our Nail Work🌼</h2>
+<h2 class="work-gallery">Our Nail Work🌼</h2>
   <div style="display:flex; gap:10px; flex-wrap:wrap;">
   <img src="IMG-20260501-WA0009.jpg" style="width:150px; height:150px; border-radius:10px;"object-fit:cover;">
   <img src="IMG-20260501-WA0016.jpg" style="width:150px; height:150px; border-radius:10px;"object-fit:cover;">
