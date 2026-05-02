@@ -30,21 +30,30 @@ font-family: Arial, sans-serif;
 }
     .star {
     display: inline-block;
-    font-size: 24px;
+    font-size: 26px;
     }
 
+/* अलग-अलग animation */
 .star1 {
-    animation: blink 1s infinite;
+    animation: twinkle1 1s infinite linear;
 }
- .star 2 {
-   animation: blink2 1.5s infinite;
- }
-    /* Blink animation */
-@keyframes blink {
-    0% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.2; transform: scale(0.7); }
-    100% { opacity: 1; transform: scale(1); }
+
+.star2 {
+    animation: twinkle2 1.3s infinite linear;
 }
+    @keyframes twinkle1 {
+    0% { opacity: 1; transform: scale(1) rotate(0deg); color: gold; }
+    50% { opacity: 0.3; transform: scale(1.5) rotate(180deg); color: orange; }
+    100% { opacity: 1; transform: scale(1) rotate(360deg); color: red; }
+}
+
+@keyframes twinkle2 {
+    0% { opacity: 1; transform: scale(1) rotate(0deg); color: #4caf50; }
+    50% { opacity: 0.2; transform: scale(1.6) rotate(-180deg); color: #2196f3; }
+    100% { opacity: 1; transform: scale(1) rotate(-360deg); color: #9c27b0; }
+}
+
+  
 
     
 .container {
@@ -264,9 +273,11 @@ footer {
 
     <!-- Welcome Text -->
     <div class="welcome">
-        <span class="star1">⭐️</span>
+        <span class="star
+          star1">⭐️</span>
         Welcome to
-        <span class="star2">⭐️</span>
+        <span class="star
+          star2">⭐️</span>
     </div>
   
   
